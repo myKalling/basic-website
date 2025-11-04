@@ -11,37 +11,37 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "BBH Sans Bogle", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
 .oswald-500 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .oswald-600 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .oswald-700 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 
 a.hover {
-    background-color: #f0f0f0;
-    color: #333;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 header {
@@ -49,7 +49,7 @@ header {
     border-bottom: 2px solid red;
 }
 
-#desktop-section {
+#desktop-section{
     display: none;
 }
 
@@ -70,10 +70,10 @@ header button {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
 }
 
 nav ul li {
@@ -96,7 +96,7 @@ nav ul li a:active {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px)  and (max-width: 900px) {
     section {
         display: inline-block;
         width: 45%;
@@ -122,7 +122,7 @@ nav ul li a:active {
         width: 30%;
     }
 
-    #desktop-section {
+    #desktop-section{
         display: inline-block;
     }
 
@@ -130,7 +130,7 @@ nav ul li a:active {
         display: none;
     }
 
-    nav ul {
+    nav ul { 
         opacity: 1;
         display: block;
     }
