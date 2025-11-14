@@ -14,20 +14,24 @@ function toggleMenu(evt) {
         nav.style.opacity = 1;
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
 
-DocumentTimeline.getElementById("contactForm").addEventListener("Submit", function(event)) {
-    // prevent deafault form submission behavior
-    event.preventDefault();
+    form.addEventListener('submit', function(event) {
+        // prevent default form submission behavior
+        event.preventDefault();
 
-    //collect form data
-    const firstName = document.querySelector("fname");
-    const lastName = document.querySelector("lname");
-    const email = document.querySelector("email");
-    const message = document.querySelector("message");
+        // collect form data (read .value from inputs)
+        const firstName = document.getElementById('fname')?.value || '';
+        const lastName = document.getElementById('lname')?.value || '';
+        const email = document.getElementById('email')?.value || '';
+        const message = document.getElementById('message')?.value || '';
 
-    // log form data to console (for demonstration purposes)
-    console.log(`Form Submission: $(firstName) $(lastName), $(email), $(message)`);
+        // log form data to console (for demonstration purposes)
+        console.log(`Form Submission: ${firstName} ${lastName}, ${email}, ${message}`);
 
-    // reset the form
-    document.getElementById("contactForm").reset();
+        // reset the form
+        form.reset();
+    });
 });
